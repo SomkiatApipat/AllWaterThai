@@ -24,12 +24,17 @@ Address2Basin <- function(address) {
            Province == address[3]) %>%
     select(Basin_name)
 
-  if (nrow(temp) == 0) {
-    b_name <- NA
-  } else if (nrow(temp) == 1) {
-    b_name <- temp[1,1]
-  } else if (nrow(temp) == 2) {
-    b_name <- paste0(temp[1,1],"/",temp[2,1])
+  ntemp <- nrow(temp)
+
+  if (ntemp == 0) {
+      b_name <- NA
+  } else if (ntemp == 1) {
+      b_name <- temp[1,1]
+  } else if (ntemp == 2) {
+      b_name <- paste0(temp[1,1],"/",temp[2,1])
+  } else if (ntemp == 3) {
+      b_name <- paste0(temp[1,1],"/",temp[2,1],"/",temp[3,1])
   }
+
   return(b_name)
 }
