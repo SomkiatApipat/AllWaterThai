@@ -15,7 +15,6 @@
 #' @examples head(addressv)
 #' @examples Basin <- Address2BasinTbl(address_table)
 #'
-#' @import dplyr
 #' @import openxlsx
 
 Address2BasinTbl <- function(address_table) {
