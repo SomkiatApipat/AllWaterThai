@@ -1,5 +1,7 @@
 #' Thai River basin name
 #'
+#' @import dplyr
+#'
 #' Finding the main River basin name using Address
 #'
 #' @param address Character, a Vector of address
@@ -14,7 +16,7 @@
 #' @examples Address2Basin(c("บางบอนเหนือ","บางบอน","กรุงเทพมหานคร"))
 #' @examples Address2Basin(c("บางบอน","บางบอน","กรุงเทพมหานคร"))
 #'
-#' @import dplyr
+
 
 Address2Basin <- function(address) {
 
