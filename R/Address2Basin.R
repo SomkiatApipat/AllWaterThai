@@ -30,6 +30,9 @@ Address2Basin <- function(address) {
     b_name <- temp[1,1]
   } else if (nrow(temp) == 2) {
     b_name <- paste0(temp[1,1],"/",temp[2,1])
+  } else if (nrow(temp) == 3) {
+    b_name <- paste0(temp[1,1],"/",temp[2,1],"/",temp[3,1])
   }
+
   return(b_name)
 }
