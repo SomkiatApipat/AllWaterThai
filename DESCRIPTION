@@ -3,7 +3,7 @@ Type: Package
 Title: All functions about Thai water management
 Version: 0.1.0
 Author: A.Somkiat
-Maintainer: The package maintainer <somkiat.apipattanavis@gmail.com>
+Maintainer: A.Somkiat <somkiat.apipattanavis@gmail.com>
 Description: Collection of water functions for Thailand
 License: GPL-3
 Encoding: UTF-8
