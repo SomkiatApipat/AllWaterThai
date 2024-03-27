@@ -4,16 +4,16 @@
 \alias{Address2BasinTbl}
 \title{Thai River basin name}
 \usage{
-Address2BasinTbl(address_table)
+Address2BasinTbl(address)
 }
 \arguments{
-\item{address_table}{Character, a Vector of address-table}
+\item{address}{Character, data frame of address}
 
-\item{address_table[, 1]}{Character, Subdistrict}
+\item{address[, 1]}{Character, Subdistrict}
 
-\item{address_table[, 2]}{Character, District}
+\item{address[, 2]}{Character, District}
 
-\item{address_table[, 3]}{Character, Province}
+\item{address[, 3]}{Character, Province}
 }
 \value{
 Main River basin name, vector
@@ -22,9 +22,8 @@ Main River basin name, vector
 Finding the main River basin name using Addresses in xlsx
 }
 \examples{
-address_table <- system.file("extdata","Address_table.xlsx", package = "AllWaterThai")
-addressv <- read.xlsx(address_table)
-head(addressv)
-Basin <- Address2BasinTbl(address_table)
+data(address)
+address
+Address2BasinTbl(address)
 
 }

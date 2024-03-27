@@ -6,11 +6,9 @@ Author: A.Somkiat
 Maintainer: A.Somkiat <somkiat.apipattanavis@gmail.com>
 Description: Collection of water functions for Thailand
 License: GPL-3
-Imports:
-    dplyr (>= 1.1.4),
-    openxlsx (>= 4.2.5.2)
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 4.3.2)
+    R (>= 4.3.2),
+    dplyr, openxlsx
 RoxygenNote: 7.3.1

@@ -15,6 +15,7 @@
 #' @examples Address2Basin(c("บางบอน","บางบอน","กรุงเทพมหานคร"))
 #'
 #' @import dplyr
+#' @export
 
 
 Address2Basin <- function(address) {
